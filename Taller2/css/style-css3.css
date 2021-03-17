@@ -1,0 +1,73 @@
+@font-face{
+    font-family: alexbrush;
+    src:url(../alexbrush.ttf);
+}
+
+/*ACTIVIDADES*/
+/*px: Los píxeles (px) son relativos al dispositivo de visualización. Para dispositivos de bajo ppp, 
+1 px es un píxel (punto) del dispositivo de la pantalla. Para impresoras y pantallas de alta resolución, 1 px implica varios píxeles del dispositivo 
+em: Son unidades de longitud relativas. Relativo al tamaño de fuente del elemento (2em significa 2 veces el tamaño de la fuente actual)*/
+p{
+    font-size: 25px;
+}
+#menu{ /*Selector de id*/
+    font-size: 1.5em;
+}
+
+/*Tipografías*/
+.mitexto1{
+    font-family: 'Akaya Telivigala', cursive; /*Fuente de Google Fonts*/
+}
+
+.mitexto2{
+    font-family: sarina, sans-serif; /*Fuente de Adobe Fonts*/
+    font-weight: 400;
+    font-style: normal;
+}
+
+.mitexto3{
+    font-family: alexbrush;
+}
+
+/*--------------------*/
+#header-title {
+    background: #DDDDDD;
+    border: 1px solid #999999;
+    display: block;
+    margin: 10px auto;
+    padding: 20px;
+    text-align: center;
+
+    -moz-border-radius: 20px 10px 30px 50px; /*Bordes*/
+    -webkit-border-radius: 20px 10px 30px 50px;
+    border-radius: 20px 10px 30px 50px;
+
+    -moz-box-shadow: rgb(150,150,150) -5px -5px; /*Sombras*/
+    -webkit-box-shadow: rgb(150,150,150) -5px -5px;
+    box-shadow: rgb(150,150,150) -5px -5px 10px inset;
+
+    /*background: -webkit-linear-gradient(top, #FFFFFF, #006699);
+    background: -moz-linear-gradient(top, #FFFFFF, #006699);*/
+    /*background: linear-gradient(30deg, #FFFFFF, #006699);*/
+
+    /*Gradiente Radial*/
+    background: -moz-radial-gradient(center,circle,#FFFFFF 0%, #006699 200%);
+    background: -webkit-radial-gradient(center,circle,#FFFFFF 0%, #006699 200%);
+    background: radial-gradient(center,circle,#FFFFFF 0%, #006699 200%);  
+
+    -moz-transition: -moz-transform 1s ease-in-out 2s; /*Transiciones*/
+    -webkit-transition: -webkit-transform 1s ease-in-out 2s;
+  
+}
+
+#span-title {
+    font: bold 36px verdana, sans-serif;
+    text-shadow: rgb(0,0,150) 3px 3px 5px;
+}
+
+#header-title:hover{ 
+    -moz-transform: rotate(5deg); /*Rotar la caja en 5°*/
+    -webkit-transform: rotate(5deg);
+}
+
+
